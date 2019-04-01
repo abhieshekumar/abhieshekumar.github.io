@@ -1,4 +1,155 @@
-*{
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+section.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+
+.interests   li {
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  margin: 0 0 5px 0;
+  padding: 0 0 5px 0;
+}
+  
+.interests   li:hover {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  color:white;
+}
+
+.name {
+  font-size: 20px;
+  color: rgba(0,0,0,.2);
+  text-decoration: none;
+}
+
+section.about p {
+  margin: 44px 0;
+  line-height: 1.42;
+  color: rgba(0,0,0,.7)
+}
+
+section.about ul li {
+  display: inline-block;
+  font-size: 14px;
+  padding-top:20px;
+}
+
+section.interests   {
+  padding-top: 100px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+section.interests   h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin: 100px auto !important;
+  line-height: 24px;
+  width: 80%;
+  color: #ccc;
+}
+
+a.mainnav {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.2s ease-in;
+  background-image: linear-gradient(120deg, #000000 0%, #000000 100%);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  background-position: 0 0;
+  transition: background-size 0.2s ease-out;
+}
+  
+a.mainnav:hover {
+  background-size: 100% 100%;
+  color: #FFF;
+}
+  
+section.about {
+  height: 90vh;
+  max-height: 1000px;
+  min-height: 500px;
+  background: #f5f5f5;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  section.centered {
+    width: 80%;
+  }
+
+  section.about p {
+    font-size: 18px;
+  }
+
+  section.about ul li {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+
+  section.interests   {
+    width: 80%;
+  }  
+
+  section.interests   ul li {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 900px) {
+  section.about {
+    height: 90vh;
+    max-height: 1000px;
+    min-height: 500px;
+    background: #f5f5f5;
+    position: relative;
+  }
+
+  section.centered {
+    width: 820px;
+  }
+
+  section.about p {
+    font-size: 24px;
+  }
+
+  section.about ul li {
+    margin-right: 40px;
+    font-size: 18px;
+  }
+
+  section.interests   {
+    width: 820px;
+  }
+
+  section.interests   ul li {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 600px) {
+  section.interests   ul li {
+    font-size: 35px;
+  }
 }
 
