@@ -15,14 +15,14 @@ section.centered {
   -o-transform: translate(-50%,-50%);
 }
 
-selected-works li {
+.interests   li {
   transition: all 0.2s ease-out;
   cursor: pointer;
   margin: 0 0 5px 0;
   padding: 0 0 5px 0;
 }
   
-.selected-works li:hover {
+.interests   li:hover {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
@@ -47,13 +47,13 @@ section.about ul li {
   padding-top:20px;
 }
 
-section.selected-works {
+section.interests   {
   padding-top: 100px;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-section.selected-works h2 {
+section.interests   h2 {
   font-size: 12px;
   text-transform: uppercase;
   color: #ccc;
@@ -107,11 +107,11 @@ section.about {
     font-size: 14px;
   }
 
-  section.selected-works {
+  section.interests   {
     width: 80%;
   }  
 
-  section.selected-works ul li {
+  section.interests   ul li {
     font-size: 48px;
   }
 }
@@ -138,17 +138,17 @@ section.about {
     font-size: 18px;
   }
 
-  section.selected-works {
+  section.interests   {
     width: 820px;
   }
 
-  section.selected-works ul li {
+  section.interests   ul li {
     font-size: 72px;
   }
 }
 
 @media (max-width: 600px) {
-  section.selected-works ul li {
+  section.interests   ul li {
     font-size: 35px;
   }
 }
