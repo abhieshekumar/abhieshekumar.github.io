@@ -6,6 +6,9 @@
   <link rel="shortcut icon" type="image/png" href="./asset/favicon.png"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
   <link rel="stylesheet" href="./asset/style/reset.css">
   <link rel="stylesheet" href="./asset/style/style.css">
 </head>
@@ -40,13 +43,15 @@
     </ul>
   </section>
   <footer>
-    <p>Thanks for visiting</p>
+    <p class="left">Thanks for visiting</p>
+    <p id="count"class="right"></p>
   </footer>
 </body>
 <script src="./asset/script/init.js"></script>
 <script>
 (function(){
   handleAnimate()
+  setUpdate()
 })();
 </script>
 </html>
