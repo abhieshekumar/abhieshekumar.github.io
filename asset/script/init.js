@@ -32,8 +32,7 @@ function handleAnimate(){
 
 window.addEventListener('scroll', handleAnimate)
 
-function setUpdate(){
-  
+function setUpdate(){  
   firebase.initializeApp({
     apiKey: 'AIzaSyAxauYU2ImqqETAodSzwL_nrtJh7oalwZM',
     authDomain: 'website-counter-abhieshekumar.firebaseapp.com',
@@ -48,6 +47,8 @@ function setUpdate(){
         document.querySelector('#count').innerHTML += `${(num+1)} views`
         db.collection('abhieshekumar.github.io').doc('counter').set({
           count: num+1
+        }).then(function(){
+          firebase.auth().signOut()
         })
       })
     }
