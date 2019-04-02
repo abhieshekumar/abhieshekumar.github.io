@@ -6,6 +6,10 @@
   font-weight: 600 !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section.centered {
   position: absolute;
   top: 50%;
@@ -22,8 +26,7 @@ section.centered {
   padding: 0 0 5px 0;
 }
   
-.interests   li:hover {
-  -webkit-text-stroke-width: 3px;
+.interests li:hover {
   -webkit-text-stroke-color: black;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
   color:white;
@@ -93,6 +96,22 @@ section.about {
   position: relative;
 }
 
+.delay-0{
+  -webkit-animation-delay:0s;animation-delay:0s
+}
+.delay-1{
+  -webkit-animation-delay:0.2s;animation-delay:0.2s
+}
+.delay-2{
+  -webkit-animation-delay:0.4s;animation-delay:0.4s
+}
+.delay-3{
+  -webkit-animation-delay:0.6s;animation-delay:0.6s
+}
+.delay-4{
+  -webkit-animation-delay:0.8s;animation-delay:0.8s
+}
+
 @media (max-width: 900px) {
   section.centered {
     width: 80%;
@@ -113,6 +132,10 @@ section.about {
 
   section.interests   ul li {
     font-size: 48px;
+  }
+
+  .interests li:hover {
+    -webkit-text-stroke-width: 1px;
   }
 }
 
