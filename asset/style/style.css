@@ -70,6 +70,20 @@ footer {
   color: #ccc;
 }
 
+footer p{
+  width: 50%;
+  padding: 10px 0 80px 0;
+}
+
+footer p.left{
+  float: left;
+}
+
+footer p.right{
+  float: right;
+  text-align: right;
+}
+
 a.mainnav {
   text-decoration: none;
   color: #000;

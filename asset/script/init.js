@@ -28,10 +28,28 @@ function handleAnimate(){
       })
     }
   })
-  if(aboutAnimated == 1 && interestItemAnimated == 5){
-    window.removeEventListener('scroll')
-  }
 }
 
 window.addEventListener('scroll', handleAnimate)
 
+function setUpdate(){
+  
+  firebase.initializeApp({
+    apiKey: 'AIzaSyAxauYU2ImqqETAodSzwL_nrtJh7oalwZM',
+    authDomain: 'website-counter-abhieshekumar.firebaseapp.com',
+    projectId: 'website-counter-abhieshekumar'
+  })
+  const db = firebase.firestore()
+  firebase.auth().signInAnonymously()
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      db.collection('abhieshekumar.github.io').doc('counter').get().then(function(doc){
+        let num = doc.data().count
+        document.querySelector('#count').innerHTML += `${(num+1)} views`
+        db.collection('abhieshekumar.github.io').doc('counter').set({
+          count: num+1
+        })
+      })
+    }
+  })
+}
