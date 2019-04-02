@@ -3,8 +3,9 @@
 <head>
   <title>Abhishek Kumar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="./asset/favicon.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="./asset/style/reset.css">
   <link rel="stylesheet" href="./asset/style/style.css">
 </head>
@@ -30,7 +31,7 @@
   </section>
   <section class="interests">
     <h2>Interests</h2>
-    <ul>
+    <ul id="interests">
       <li><a>Reading &nbsp;,</a></li>
       <li><a>Coding &nbsp;,</a></li>
       <li><a>Open Source &nbsp;,</a></li>
@@ -42,4 +43,10 @@
     <p>Thanks for visiting</p>
   </footer>
 </body>
+<script src="./asset/script/init.js"></script>
+<script>
+(function(){
+  handleAnimate()
+})();
+</script>
 </html>
